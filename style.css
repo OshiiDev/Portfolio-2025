@@ -138,4 +138,46 @@ display: flex;
 
 section{
     width: 100%;
+    min-height: 90vh;
+}
+
+section .main-container{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 100px;
+    align-items: center;
+}
+
+.main-container .image{
+    width:500px;
+    height: 60vh;
+    border-radius: 100%;
+    overflow: hidden;
+    box-shadow: 0 0 50px #b74b4b;
+}
+
+/*    Image template check width after    */
+.main-container .image img {
+    width:100%;
+}
+
+.main-container .image:hover{
+    animation: animate 1.5s ease-in-out infinite;
+}
+
+@keyframes animate {
+    0%{
+        scale: 1;
+    }
+    50%{
+         scale: 1.05;
+    }
+    100%{
+        scale: 1;
+    }
+}
+
+.main-container .content {
+    color: aliceblue;
+    width: 40%;
 }
